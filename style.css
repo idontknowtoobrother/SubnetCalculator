@@ -1,0 +1,14 @@
+.windowScope {
+    background-color: red;
+    width: 450px;
+    height: 600px;
+    padding: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.networkClass{
+    background-color: wheat;
+    width: 200px;
+    height: 80px;
+}
