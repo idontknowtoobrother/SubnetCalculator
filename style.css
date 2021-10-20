@@ -1,14 +1,73 @@
-.windowScope {
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;1,200&display=swap');
+
+
+.container{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 9px;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 1px rgba(34, 34, 34, 0.452);
+    background: rgba(128, 128, 128, 0.651);
+    height: 500px;
+    width: 460px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+h2 {
+    background:rgb(0, 0, 0);
     width: 450px;
-    height: 600px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px;
+    color: white;
+}
+
+.inner-container {
+    width: 450px;
+    padding:20px;
     display: grid;
     grid-template-columns: auto auto;
+    grid-gap: 10px;
 }
 
 .networkClass{
-    background-color: wheat;
-    width: 200px;
-    height: 80px;
+    height: 40px;
+}
+
+.fieldWrapper{
+    height:40px
+}
+
+input, select {
+    background:rgba(255, 255, 255, 0.664);
+}
+
+.resultWrapper, .inputField, .resultWrapperLong{
+    border:solid 0.5px;
+    padding: 5px 5px 5px 5px;
+    font-size: 11px;
+    height:15px;
+    width:180px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+select {
+    text-align: center;
+    border:solid 0.5px;
+    border-radius: 3px;
+    height:25px;
+    width:192px;
+}
+
+#subnetBitmap{
+    background: white;
+}
+
+.resultWrapperLong {
+    width:auto;
+}
+
+.fieldWrapperLong{
+    text-align: center;
+    width: 420px;
+    margin-left: 20px;
 }
