@@ -7,44 +7,44 @@
     <body>
         <div class="container">
             <h2>Subnet Calculator</h2>
-
+            
             <div class="inner-container">
-
+                
                 <div class="networkClass">
                     Network Class<br>
                     <label for="networkClassA">A</label>
-                    <input type="radio" id="classA" value="A" checked>
+                    <input class="networkSelector" type="radio" id="classA" value="A" checked>
                     <label for="networkClassB">B</label>
-                    <input type="radio" id="classB" value="B">
+                    <input class="networkSelector" type="radio" id="classB" value="B">
                     <label for="networkClassC">C</label>
-                    <input type="radio" id="classC" value="C">
+                    <input class="networkSelector" type="radio" id="classC" value="C">
                 </div>
-
+                
                 <div class="fieldWrapper">
                     First Octet Range<br>
                     <div class="resultWrapper" id="firstOctetRange">192-223</div>
                 </div>
-
+                
                 <div class="fieldWrapper">
                     IP Address<br>
                     <input class="inputField" type="text" id="ipAddress" value="192.168.0.1">
                 </div>
-
+                
                 <div class="fieldWrapper">
                     Hex IP Address<br>
                     <div class="resultWrapper" id="hexIPAddress">192-223</div>
                 </div>
-
+                
                 <div class="fieldWrapper">
                     Subnet Mask<br>
                     <input class="inputField" type="text" id="subnetMask" value="255.255.255.0">
                 </div>
-
+                
                 <div class="fieldWrapper">
                     Wildcard Mask<br>
                     <div class="resultWrapper" id="wildcardMask">0.0.0.255</div>
                 </div>
-
+                
                 <div class="fieldWrapper">
                     Subnet Bits<br>
                     <select id="subnetBits" >
@@ -57,7 +57,7 @@
                         <option value="6">6</option>
                     </select>
                 </div>
-
+                
                 <div class="fieldWrapper">
                     Mask Bits<br>
                     <select id="maskBits" >
@@ -70,7 +70,7 @@
                         <option value="30">30</option>
                     </select>
                 </div>
-
+                
                 <div class="fieldWrapper">
                     Maximum Subnets<br>
                     <select id="maximumSubnets" >
@@ -83,7 +83,7 @@
                         <option value="64">64</option>
                     </select>
                 </div>
-
+                
                 <div class="fieldWrapper">
                     Host per Subnet<br>
                     <select id="hostperSubnet" >
@@ -98,32 +98,35 @@
                 </div>
                 
             </div>
-
+            
             <div class="fieldWrapperLong">
                 Host Address Range<br>
                 <div class="resultWrapperLong" id="hostAddressRange">0.0.0.255</div>
             </div>
-
+            
             <div class="inner-container">
-
+                
                 <div class="fieldWrapper">
                     Subnet ID<br>
                     <div class="resultWrapper" id="subnetID">192.168.0.0</div>
                 </div>
-
+                
                 <div class="fieldWrapper">
                     Broadcast Address<br>
                     <div class="resultWrapper" id="broadcastAddress">192.168.0.255</div>
                 </div>
-
+                
             </div>
-
+            
             <div class="fieldWrapperLong">
                 Subnet Bitmap<br>
                 <div class="resultWrapperLong" id="subnetBitmap">110nnnnn.nnnnnnnn.nnnnnnnn.hhhhhhhh</div>
             </div>
-
+            
         </div>
-
+        
+        <!-- <link rel="script" href="subNetCalculator.js"> -->
+        <script src="subNetCalculator.js"></script>
     </body>
+
 </html>
