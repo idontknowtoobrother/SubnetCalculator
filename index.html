@@ -13,16 +13,16 @@
                 <div class="networkClass">
                     Network Class<br>
                     <label for="networkClassA">A</label>
-                    <input class="networkSelector" type="radio" id="classA" value="A" checked>
+                    <input class="networkSelector" type="radio" id="classA" value="A">
                     <label for="networkClassB">B</label>
                     <input class="networkSelector" type="radio" id="classB" value="B">
                     <label for="networkClassC">C</label>
-                    <input class="networkSelector" type="radio" id="classC" value="C">
+                    <input class="networkSelector" type="radio" id="classC" value="C" checked>
                 </div>
                 
                 <div class="fieldWrapper">
                     First Octet Range<br>
-                    <div class="resultWrapper" id="firstOctetRange">192-223</div>
+                    <div class="resultWrapper" id="firstOctetRange">192 - 223</div>
                 </div>
                 
                 <div class="fieldWrapper">
@@ -32,12 +32,20 @@
                 
                 <div class="fieldWrapper">
                     Hex IP Address<br>
-                    <div class="resultWrapper" id="hexIPAddress">192-223</div>
+                    <div class="resultWrapper" id="hexIPAddress">C0.A8.00.01</div>
                 </div>
                 
                 <div class="fieldWrapper">
                     Subnet Mask<br>
-                    <input class="inputField" type="text" id="subnetMask" value="255.255.255.0">
+                    <select id="subnetMask">
+                        <option value="255.255.255.0">255.255.255.0</option>
+                        <option value="255.255.255.128">255.255.255.128</option>
+                        <option value="255.255.255.192">255.255.255.192</option>
+                        <option value="255.255.255.224">255.255.255.224</option>
+                        <option value="255.255.255.240">255.255.255.240</option>
+                        <option value="255.255.255.248">255.255.255.248</option>
+                        <option value="255.255.255.252">255.255.255.252</option>
+                    </select>
                 </div>
                 
                 <div class="fieldWrapper">

@@ -5,8 +5,8 @@
     font-family: 'Source Code Pro', monospace;
     font-size: 9px;
     font-weight: bold;
-    text-shadow: 0.5px 0.5px 1px rgba(34, 34, 34, 0.452);
-    background: rgba(128, 128, 128, 0.651);
+    text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.452);
+    background: rgba(121, 121, 121, 0.658);
     height: 500px;
     width: 460px;
     transform: translateX(-50%);
