@@ -17,7 +17,7 @@
                     <label for="networkClassB">B</label>
                     <input class="networkSelector" type="radio" id="classB" value="B">
                     <label for="networkClassC">C</label>
-                    <input class="networkSelector" type="radio" id="classC" value="C" checked>
+                    <input class="networkSelector" type="radio" id="classC" value="C">
                 </div>
                 
                 <div class="fieldWrapper">
@@ -27,7 +27,7 @@
                 
                 <div class="fieldWrapper">
                     IP Address<br>
-                    <input class="inputField" type="text" id="ipAddress" value="192.168.0.1">
+                    <input class="inputField" type="text" id="ipAddress" value="192.168.0.1" onchange="calculateSubNetwork()">
                 </div>
                 
                 <div class="fieldWrapper">
@@ -37,7 +37,7 @@
                 
                 <div class="fieldWrapper">
                     Subnet Mask<br>
-                    <select id="subnetMask">
+                    <select id="subnetMask" onchange="calculateSubNetwork()">
                         <option value="255.255.255.0">255.255.255.0</option>
                         <option value="255.255.255.128">255.255.255.128</option>
                         <option value="255.255.255.192">255.255.255.192</option>
@@ -55,7 +55,7 @@
                 
                 <div class="fieldWrapper">
                     Subnet Bits<br>
-                    <select id="subnetBits" >
+                    <select id="subnetBits" disabled="true">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -68,7 +68,7 @@
                 
                 <div class="fieldWrapper">
                     Mask Bits<br>
-                    <select id="maskBits" >
+                    <select id="maskBits" disabled="true">
                         <option value="24">24</option>
                         <option value="25">25</option>
                         <option value="26">26</option>
@@ -81,7 +81,7 @@
                 
                 <div class="fieldWrapper">
                     Maximum Subnets<br>
-                    <select id="maximumSubnets" >
+                    <select id="maximumSubnets" disabled="true">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="4">4</option>
@@ -94,7 +94,7 @@
                 
                 <div class="fieldWrapper">
                     Host per Subnet<br>
-                    <select id="hostPerSubnet">
+                    <select id="hostPerSubnet" disabled="true">
                         <option value="254">254</option>
                         <option value="126">126</option>
                         <option value="62">62</option>
